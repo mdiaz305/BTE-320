@@ -1,0 +1,377 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNnpueYVz/5J/eXx6c1d+ts",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mdiaz305/BTE-320/blob/main/Diaz%2C_Max%3B_In_Class_Assignment_Notebook.ipynb%20(9/22/25)\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Inputs: sales and cogs_[pct]\n",
+        "sales = input(\"Enter sales ($): \")\n",
+        "sales = float(sales)\n",
+        "\n",
+        "cogs_pct = input(\"Enter Cost of Goods sold (%): \")\n",
+        "cogs_pct = float(cogs_pct)\n",
+        "\n",
+        "# Processes: calculate actual cost of goods sold\n",
+        "cogs = sales * cogs_pct / 100\n",
+        "\n",
+        "grossProfit = sales - cogs\n",
+        "\n",
+        "\n",
+        "# Outputs display cogs and grossProfit\n",
+        "\n",
+        "\n",
+        "\n",
+        "taxrate_pct = input(\"Enter Tax Rate (%): \")\n",
+        "taxrate_pct = float(taxrate_pct)\n",
+        "\n",
+        "taxes = grossProfit * taxrate_pct\n",
+        "\n",
+        "\n",
+        "\n",
+        "print(f\"Cost of Goods sold: ${cogs}\")\n",
+        "print(f\"Gross Profit: ${grossProfit}\")\n",
+        "print(f\"Taxes: ${taxes}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "sdkxn69GjmPg",
+        "outputId": "d68839e9-ec07-4cd2-85b7-6a9c23c650f8"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter sales ($): 12000\n",
+            "Enter Cost of Goods sold (%): 40\n",
+            "Enter Tax Rate (%): 20\n",
+            "Cost of Goods sold: $4800.0\n",
+            "Gross Profit: $7200.0\n",
+            "Taxes: $144000.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 9/3/25\n",
+        "# Inputs: sales and cogs_[pct] and tax rate\n",
+        "sales = input(\"Enter sales ($): \")\n",
+        "sales = float(sales)\n",
+        "\n",
+        "cogs_pct = input(\"Enter Cost of Goods sold (%): \")\n",
+        "cogs_pct = float(cogs_pct)\n",
+        "\n",
+        "rate = input(\"Enter tax rate (%): \")\n",
+        "rate = float(rate)\n",
+        "\n",
+        "# Processes: calculate actual cost of goods sold\n",
+        "cogs = sales * cogs_pct / 100\n",
+        "\n",
+        "grossProfit = sales - cogs\n",
+        "\n",
+        "taxes = grossProfit * rate / 100\n",
+        "\n",
+        "netIncome = grossProfit - taxes\n",
+        "\n",
+        "\n",
+        "# Outputs display cogs and grossProfit\n",
+        "\n",
+        "print(f\"Cost of Goods sold: ${cogs}\")\n",
+        "print(f\"Gross Profit: ${grossProfit}\")\n",
+        "print(f\"Taxes: ${taxes}\")\n",
+        "print(f\"Net Income: ${netIncome}\")\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 365
+        },
+        "id": "LLtvNqvDncPu",
+        "outputId": "04d76bfb-ad2e-4de4-a20a-4195569c4788"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "error",
+          "ename": "KeyboardInterrupt",
+          "evalue": "Interrupted by user",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m                         Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-642072688.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m      1\u001b[0m \u001b[0;31m# Inputs: sales and cogs_[pct] and tax rate\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m----> 2\u001b[0;31m \u001b[0msales\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Enter sales ($): \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m      3\u001b[0m \u001b[0msales\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mfloat\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0msales\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      4\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m      5\u001b[0m \u001b[0mcogs_pct\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0minput\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Enter Cost of Goods sold (%): \"\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36mraw_input\u001b[0;34m(self, prompt)\u001b[0m\n\u001b[1;32m   1175\u001b[0m                 \u001b[0;34m\"raw_input was called, but this frontend does not support input requests.\"\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1176\u001b[0m             )\n\u001b[0;32m-> 1177\u001b[0;31m         return self._input_request(\n\u001b[0m\u001b[1;32m   1178\u001b[0m             \u001b[0mstr\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mprompt\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1179\u001b[0m             \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0m_parent_ident\u001b[0m\u001b[0;34m[\u001b[0m\u001b[0;34m\"shell\"\u001b[0m\u001b[0;34m]\u001b[0m\u001b[0;34m,\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;32m/usr/local/lib/python3.12/dist-packages/ipykernel/kernelbase.py\u001b[0m in \u001b[0;36m_input_request\u001b[0;34m(self, prompt, ident, parent, password)\u001b[0m\n\u001b[1;32m   1217\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1218\u001b[0m                 \u001b[0;31m# re-raise KeyboardInterrupt, to truncate traceback\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m-> 1219\u001b[0;31m                 \u001b[0;32mraise\u001b[0m \u001b[0mKeyboardInterrupt\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Interrupted by user\"\u001b[0m\u001b[0;34m)\u001b[0m \u001b[0;32mfrom\u001b[0m \u001b[0;32mNone\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m   1220\u001b[0m             \u001b[0;32mexcept\u001b[0m \u001b[0mException\u001b[0m\u001b[0;34m:\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m   1221\u001b[0m                 \u001b[0mself\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mlog\u001b[0m\u001b[0;34m.\u001b[0m\u001b[0mwarning\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;34m\"Invalid Message:\"\u001b[0m\u001b[0;34m,\u001b[0m \u001b[0mexc_info\u001b[0m\u001b[0;34m=\u001b[0m\u001b[0;32mTrue\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mKeyboardInterrupt\u001b[0m: Interrupted by user"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 9/8/25\n",
+        "\n",
+        "# Inputs - Annual Demand, Reorder Cost, Holding Cost\n",
+        "# Outputs - EOQ\n",
+        "\n",
+        "\n",
+        "\n",
+        "annualDemand = input(\"Enter Annual Demand (units/year): \")\n",
+        "annualDemand = float(annualDemand)\n",
+        "\n",
+        "reorderCost = input(\"Enter Reorder Cost ($/order): \")\n",
+        "reorderCost = float(reorderCost)\n",
+        "\n",
+        "holdingCost = input(\"Enter Holding Cost ($/unit/year): \")\n",
+        "holdingCost = float(holdingCost)\n",
+        "\n",
+        "EOQ = (2 * annualDemand * reorderCost / holdingCost)\n",
+        "\n",
+        "\n",
+        "print(f\"Annual Demand: {annualDemand} units/year\")\n",
+        "print(f\"Reorder Cost: ${grossProfit}/order\")\n",
+        "print(f\"Holding Cost: ${holdingCost}/units/year\")\n",
+        "print(f\"EOQ: ${EOQ}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/",
+          "height": 269
+        },
+        "id": "G0guv-D5ImYw",
+        "outputId": "0016916a-a899-4f5b-bcf6-0bce852161a3"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "Enter Annual Demand (units/year): 10000\n",
+            "Enter Reorder Cost ($/order): 20\n",
+            "Enter Holding Cost ($/unit/year): 40\n"
+          ]
+        },
+        {
+          "output_type": "error",
+          "ename": "NameError",
+          "evalue": "name 'sqrt' is not defined",
+          "traceback": [
+            "\u001b[0;31m---------------------------------------------------------------------------\u001b[0m",
+            "\u001b[0;31mNameError\u001b[0m                                 Traceback (most recent call last)",
+            "\u001b[0;32m/tmp/ipython-input-941745972.py\u001b[0m in \u001b[0;36m<cell line: 0>\u001b[0;34m()\u001b[0m\n\u001b[1;32m     15\u001b[0m \u001b[0mholdingCost\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0mfloat\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0mholdingCost\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     16\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0;32m---> 17\u001b[0;31m \u001b[0mEOQ\u001b[0m \u001b[0;34m=\u001b[0m \u001b[0msqrt\u001b[0m\u001b[0;34m(\u001b[0m\u001b[0;36m2\u001b[0m \u001b[0;34m*\u001b[0m \u001b[0mannualDemand\u001b[0m \u001b[0;34m*\u001b[0m \u001b[0mreorderCost\u001b[0m \u001b[0;34m/\u001b[0m \u001b[0mholdingCost\u001b[0m\u001b[0;34m)\u001b[0m\u001b[0;34m\u001b[0m\u001b[0;34m\u001b[0m\u001b[0m\n\u001b[0m\u001b[1;32m     18\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n\u001b[1;32m     19\u001b[0m \u001b[0;34m\u001b[0m\u001b[0m\n",
+            "\u001b[0;31mNameError\u001b[0m: name 'sqrt' is not defined"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "# sqrt(2*D*S/H)"
+      ],
+      "metadata": {
+        "id": "Y0jptVKAM7CF"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "\n",
+        "# Inputs\n",
+        "demand = int(input(\"Enter demand (units/year): \"))\n",
+        "reorder = float(input(\"Enter reorder cost ($/unit): \"))\n",
+        "holding = float(input(\"Enter holding cost ($/unit/year): \"))\n",
+        "\n",
+        "# Processes\n",
+        "\n",
+        "eoq = (2 * demand * reorder) / holding ** 0.5\n",
+        "\n",
+        "# Output\n",
+        "\n",
+        "print(f\"EOQ: {eoq} units\")"
+      ],
+      "metadata": {
+        "id": "y66IWQ8sLqjE",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "929d925c-ad04-4f41-e81e-33ba71b62a5b"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter demand (units/year): 100\n",
+            "Enter reorder cost ($/unit): 1.5\n",
+            "Enter holding cost ($/unit/year): 3\n",
+            "EOQ: 173.20508075688775 units\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# Numerical Calculator\n",
+        "# 9/15/25\n",
+        "n1 = float(input(\"Enter n1: \"))\n",
+        "n2 = float(input(\"Enter n2: \"))\n",
+        "op = input(\"Enter operator (+, -, *, /, //, **, %): \")\n",
+        "\n",
+        "\n",
+        "if op == \"+\":\n",
+        "  res = n1 + n2\n",
+        "elif op == \"-\":\n",
+        "  res = n1 - n2\n",
+        "elif op == \"*\":\n",
+        "  res = n1 * n2\n",
+        "elif op == \"/\":\n",
+        "  res = n1 / n2\n",
+        "elif op == \"//\":\n",
+        "  res = n1 // n2\n",
+        "elif op == \"**\":\n",
+        "  res = n1 ** n2\n",
+        "elif op == \"%\":\n",
+        "  res = n1 % n2\n",
+        "else:\n",
+        "  res = None\n",
+        "  print(\"Invalid operator\")\n",
+        "\n",
+        "print(f\"result: {res}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Gi75wvHcPJwu",
+        "outputId": "d5937a2f-3809-4c4e-84ce-88dd5e100f69"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Enter n1: 78\n",
+            "Enter n2: 3782923747\n",
+            "Enter operator (+, -, *, /, //, **, %): -\n",
+            "result: -3782923669.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 9/17/25\n",
+        "# Parking Garage\n",
+        "\n",
+        "print(\"Hours Fee\")\n",
+        "for hour in range(1, 9):\n",
+        "  fee = 5 + 2.5 * hour\n",
+        "  if fee < 10:\n",
+        "    fee = 10.0\n",
+        "  elif fee > 20:\n",
+        "    fee = 20.0\n",
+        "  print(f\"{hour} ${fee}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Zl4X82S6gV7p",
+        "outputId": "72aa0f41-2fcc-4d68-fba3-b9500f449cfe"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Hours Fee\n",
+            "1 $10.0\n",
+            "2 $10.0\n",
+            "3 $12.5\n",
+            "4 $15.0\n",
+            "5 $17.5\n",
+            "6 $20.0\n",
+            "7 $20.0\n",
+            "8 $20.0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "# 9/22/25\n",
+        "# Movie Theater\n",
+        "\n",
+        "for ad in range(0, 201, 25):\n",
+        "  revenue = 20 * 10 + 10 * 2 * ad ** 0.5\n",
+        "  expenses = 200 + ad\n",
+        "  profit = revenue - expenses\n",
+        "  print(ad, round(profit))"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "loJ6GzxGO5uD",
+        "outputId": "d7ff21d2-e52f-45ad-b688-7e2b60d564dc"
+      },
+      "execution_count": 17,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0 0\n",
+            "25 75\n",
+            "50 91\n",
+            "75 98\n",
+            "100 100\n",
+            "125 99\n",
+            "150 95\n",
+            "175 90\n",
+            "200 83\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
